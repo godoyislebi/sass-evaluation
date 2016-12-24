@@ -1,0 +1,7 @@
+@mixin linea-titulo($bb, $pb, $relative, $mb, $uppercase){
+	border-bottom: $bb;
+	padding-bottom: $pb;
+	position: $relative;
+	margin-bottom: $mb;
+	text-transform: $uppercase;
+}
