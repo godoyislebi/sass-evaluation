@@ -6354,8 +6354,18 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+#fondo {
+  background-image: url("../img/background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.container {
+  background-color: rgba(250, 250, 250, 0.9); }
+
 nav ul a {
-  color: dimgray; }
+  color: dimgray;
+  font-size: 13px; }
 
 nav {
   background-color: #fff; }
@@ -6363,19 +6373,10 @@ nav {
 h5 {
   font-size: 16px; }
 
-h5.line {
-  border-bottom: 1px solid #ea4748;
-  padding-bottom: 8px;
-  position: relative;
-  margin-bottom: 10px;
-  text-transform: uppercase; }
+img {
+  width: 100%; }
 
-/*h5.line {
-    border-bottom: 1px solid #ea4748;
-    padding-bottom: 8px;
-    position: relative;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}*/
+.logo img {
+  width: inherit; }
 
 /*# sourceMappingURL=main.css.map */

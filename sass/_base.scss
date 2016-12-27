@@ -1,5 +1,22 @@
+body{
+	color:$color-tipografia; 
+}
+
+#fondo{
+	background-image: url("../img/background.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position:center;
+}
+
+.container{
+	background-color:$background-container;
+}
+
+
 nav ul a{
 	color: $color-tipografia;
+	font-size: $font-size-nav;
 }
 
 nav{
@@ -10,3 +27,10 @@ h5{
 	font-size: $font-titulos;
 }
 
+img{
+	width: 100%;
+}
+
+.logo img{
+	width: inherit;
+}

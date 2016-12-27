@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <title>Sass evaluation</title>
 </head>
-<body>
+<body id="fondo">
   <header>
     <div class="container">
-     <div class="row">
-       <div class="col s6">
+     <div class="row"> 
+       <div class="col s6 m6 l6"> <!-- Logo -->
          <div class="logo">
            <a href="">
             <img src="img/logo.png" alt="logo">
           </a>
         </div>
-      </div>
-      <div class="col s6">
+      </div>                <!-- Fin logo -->
+      <div class="col s6 m6 l6">  <!--Barra de búsqueda -->
         <nav>
          <div class="nav-wrapper">
           <form>
@@ -26,142 +28,143 @@
             <input id="search" type="search" required>
             <label for="search"><i class="material-icons">search</i></label>
             <i class="material-icons">close</i>
-          </div>
-        </form>
-      </div>
-    </nav>
-  </div>
-</div>
-<div class="row">
- <div class="cols 12">
-  <nav>
-    <div class="nav-wrapper">
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="index.html">HOME.</a></li>
-        <li> 
-         <a class='dropdown-button' href='#' data-activates='dropdown1'>PAGES.</a>
-         <ul id='dropdown1' class='dropdown-content'>
-           <li><a href="#!"><i class="fa fa-chevron-right" aria-hidden="true"></i>one</a></li>
-           <li><a href="#!"><i class="fa fa-chevron-right" aria-hidden="true"></i>two</a></li>
-           <li class="divider"></li>
-           <li><a href="#!"><i class="fa fa-chevron-right" aria-hidden="true"></i>three</a></li>
-         </ul>
-       </li>
-       <li><a href="#">WORLD.</a></li>
-       <li><a href="#">BUSINESS.</a></li>
-       <li><a href="#">POLITICS.</a></li>
-       <li> 
-         <a class='dropdown-button' href='#' data-activates='dropdown1'>SPORTS.</a>
-         <ul id='dropdown1' class='dropdown-content'>
-           <li><a href="#!"><i class="fa fa-chevron-right" aria-hidden="true"></i>one</a></li>
-           <li><a href="#!"><i class="fa fa-chevron-right" aria-hidden="true"></i>two</a></li>
-           <li class="divider"></li>
-           <li><a href="#!"><i class="fa fa-chevron-right" aria-hidden="true"></i>three</a></li>
-         </ul>
-       </li>
-       <li><a href="#">HEALTH.</a></li>
-       <li><a href="#">SCIENCE.</a></li>
-       <li><a href="#">MUSIC.</a></li>
-       <li><a href="#">TECH.</a></li>
-      </ul>
+           </div>
+          </form>
+         </div>
+        </nav>
+      </div>               <!-- Fin barra de búsqueda -->
      </div>
-    </nav>
+     <div class="row">
+      <div class="col s12 m12 l12">
+       <nav>               <!-- Nav -->
+        <div class="nav-wrapper">
+         <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li>
+           <a href="index.html">HOME.</a>
+          </li>
+          <li>     <!-- Inicio dropdown Pages -->
+           <a class='dropdown-button' href='#' data-activates='dropdown1'>PAGES</a>
+           <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!"><i class="fa fa-chevron-right" aria-hidden="true"></i>one</a></li>
+            <li><a href="#!"><i class="fa fa-chevron-right" aria-hidden="true"></i>two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!"><i class="fa fa-chevron-right" aria-hidden="true"></i>three</a></li>
+           </ul>
+          </li>     <!-- Fin dropdown Pages -->
+          <li><a href="#">WORLD</a></li>
+          <li><a href="#">BUSINESS</a></li>
+          <li><a href="#">POLITICS</a></li>
+          <li>      <!--Inicio dropdown Sports -->
+           <a class='dropdown-button' href='#' data-activates='dropdown1'>SPORTS</a>
+           <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!"><i class="fa fa-chevron-right" aria-hidden="true"></i>one</a></li>
+            <li><a href="#!"><i class="fa fa-chevron-right" aria-hidden="true"></i>two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!"><i class="fa fa-chevron-right" aria-hidden="true"></i>three</a></li>
+           </ul>
+          </li>     <!-- Fin dropdown Sports -->
+          <li><a href="#">HEALTH.</a></li>
+          <li><a href="#">SCIENCE.</a></li>
+          <li><a href="#">MUSIC.</a></li>
+          <li><a href="#">TECH.</a></li>
+         </ul>
+        </div>
+       </nav>      <!-- Fin Nav -->
+      </div>
+     </div>
    </div>
-  </div>
- </div>
-</header>
-<section>
-  <div class="container">
+  </header>
+  <section>  <!-- -->
+   <div class="container">
     <div class="row">
-      <div class="col s8">
-        <div class="slider ">
+      <div class="col s12 m8 l8">
+        <div class="slider ">  <!--Inicio Slider -->
          <ul class="slides">
           <li>
             <img src="img/1.png"> <!-- random image -->
             <div class="caption center-align"></div>
             <p>
              <a href="#">Google wants more women in tech.</a>
-           </p>
-         </li>
-         <li>
+            </p>
+          </li>
+          <li>
            <img src="img/2.png"> <!-- random image -->
            <div class="caption center-align">
              <p>
                <a href="#">Google wants more women in tech.</a>
              </p>
            </div>
-         </li>
-         <li>
-          <img src="img/3.png"> <!-- random image -->
-          <div class="caption left-align">
+          </li>
+          <li>
+           <img src="img/3.png"> <!-- random image -->
+           <div class="caption left-align">
             <p>
               <a href="#">Google wants more women in tech.</a>
             </p>
-          </div>
-        </li>
-        <li>
-          <img src="img/4.png"> <!-- random image -->
-          <div class="caption right-align">
+           </div>
+          </li>
+          <li>
+           <img src="img/4.png"> <!-- random image -->
+           <div class="caption right-align">
             <p>
               <a href="#">Google wants more women in tech.</a>
             </p>
-          </div>
-        </li>
-        <li>
-          <img src="img/5.png"> <!-- random image -->
-          <div class="caption center-align">
+           </div>
+          </li>
+          <li>
+           <img src="img/5.png"> <!-- random image -->
+           <div class="caption center-align">
             <p>
              <a href="#">Google wants more women in tech.</a>
-           </p>
-         </div>
-         <p></p>
-       </li>
-     </ul>
-   </div>
- </div>
- <div class="col s4">
-  <div class="row">
-    <div class="col s12">
-      <a href="#">
-        <img src="img/6.png" alt="">
-      </a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s12">
-      <div class="row">
-        <div class="col s6">
-          <a href="">
-            <img src="img/13 (1).png" alt="">
-          </a>
-        </div>
-        <div class="col s6">
-          <a href="">
-            <img src="img/4 (1).png" alt="">
-          </a>
-        </div>
+            </p>
+           </div>
+           <p></p>
+          </li>
+        </ul>
+       </div>                          <!-- Fin Slider -->
       </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section>
-  <div class="container">
+      <div class="col s12 m4 l4">
+       <div class="row">
+        <div class="col s6 m12 l12">
+         <a href="#">
+          <img src="img/6.png" alt="">
+         </a>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col s12 m12 l12">
+         <div class="row">
+          <div class="col s6 m6 l6">
+           <a href="">
+            <img src="img/13 (1).png" alt="">
+           </a>
+          </div>
+          <div class="col s12 m6 l6">
+           <a href="">
+            <img src="img/4 (1).png" alt="">
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+   </div>
+  </section>
+  <section>
+   <div class="container">
     <div class="row">
-      <div class="col s4">
+      <div class="col s12 m4 l4">
         <h5 class="linea">POPULAR NEW</h5>
          <div class="row">
-          <div class="col s12">
+          <div class="col s12 m12 l12">
            <div class="row">
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <a href="#">
               <img src="img/5 (1).png" alt="">
              </a>
             </div>
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <p>
               <span>26 May, 2013.</span>
               <a href="#">Blandit Rutrum, Erat et Sagittis.</a>
@@ -171,14 +174,14 @@
           </div>
          </div>
          <div class="row">
-          <div class="col s12">
+          <div class="col s12 m12 l12">
            <div class="row">
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <a href="#">
               <img src="img/6 (1).png" alt="">
              </a>
             </div>
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <p>
               <span>26 May, 2013.</span>
               <a href="#">Blandit Rutrum, Erat et Sagittis.</a>
@@ -188,14 +191,14 @@
           </div>
          </div>
          <div class="row">
-          <div class="col s12">
+          <div class="col s12 m12 l12">
            <div class="row">
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <a href="#">
               <img src="img/7.png" alt="">
              </a>
             </div>
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <p>
               <span>26 May, 2013.</span>
               <a href="#">Blandit Rutrum, Erat et Sagittis.</a>
@@ -205,14 +208,14 @@
           </div>
          </div>
         <div class="row">
-         <div class="col s12">
+         <div class="col s12 m12 l12">
           <div class="row">
-           <div class="col s6">
+           <div class="col s6 m6 l6">
             <a href="#">
              <img src="img/8.png" alt="">
             </a>
            </div>
-           <div class="col s6">
+           <div class="col s6 m6 l6">
             <p>
              <span>26 May, 2013.</span>
              <a href="#">Blandit Rutrum, Erat et Sagittis.</a>
@@ -222,17 +225,17 @@
          </div>
         </div>
       </div>
-      <div class="col s4">
+      <div class="col s12 m4 l4">
        <h5 class="linea">HOT NEWS</h5>
         <div class="row">
-          <div class="col s12">
+          <div class="col s12 m12 l12">
            <div class="row">
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <a href="#">
               <img src="img/9.png" alt="">
              </a>
             </div>
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <p>
               <span>26 May, 2013.</span>
               <a href="#">Blandit Rutrum, Erat et Sagittis.</a>
@@ -242,14 +245,14 @@
           </div>
          </div>
          <div class="row">
-          <div class="col s12">
+          <div class="col s12 m12 l12">
            <div class="row">
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <a href="#">
               <img src="img/10.png" alt="">
              </a>
             </div>
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <p>
               <span>26 May, 2013.</span>
               <a href="#">Blandit Rutrum, Erat et Sagittis.</a>
@@ -259,14 +262,14 @@
           </div>
          </div>
          <div class="row">
-          <div class="col s12">
+          <div class="col s12 m12 l12">
            <div class="row">
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <a href="#">
               <img src="img/11.png" alt="">
              </a>
             </div>
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <p>
               <span>26 May, 2013.</span>
               <a href="#">Blandit Rutrum, Erat et Sagittis.</a>
@@ -276,14 +279,14 @@
           </div>
          </div>
          <div class="row">
-          <div class="col s12">
+          <div class="col s12 m12 l12">
            <div class="row">
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <a href="#">
               <img src="img/12.png" alt="">
              </a>
             </div>
-            <div class="col s6">
+            <div class="col s6 m6 l6">
              <p>
               <span>26 May, 2013.</span>
               <a href="#">Blandit Rutrum, Erat et Sagittis.</a>
@@ -293,17 +296,40 @@
           </div>
          </div>
       </div>
-      <div class="col s4">
+      <div class="col s12 m4 l4">
        <h5 class="linea">STAY CONNECTED</h5>
+       <div class="row">
+         <div class="col s12 m12 l12">
+           <div class="row">
+             <div class="col m4 l4 center">
+               <a href="#" class="facebook">
+                 <p><b>6,800</b> <i>fans</i></p>
+               </a>
+             </div>
+             <div class="col m4 l4 center">
+               <a href="#" class="twitter">
+                 <p><b>12,475</b> <i>followers</i></p>
+               </a>
+             </div>
+             <div class="col m4 l4 center">
+               <a href="#" class="rss">
+                <i class="material-icons">rss_feed</i>
+                <p><i>Subscribe via rss</i></p>
+               </a>
+             </div>
+           </div>
+         </div>
+       </div>
       </div>
    </div>
-  </div>
-</section>
+   </div>
+  </section>
 
 
 
-<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="sass/materialize-src/js/bin/materialize.js"></script> 
-<script type='text/javascript' src='js/main.js'></script>
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="sass/materialize-src/js/bin/materialize.js"></script> 
+  <script type='text/javascript' src='js/main.js'></script>
+
 </body>
 </html>
